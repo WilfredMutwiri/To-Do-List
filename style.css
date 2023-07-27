@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.container{
+    background: linear-gradient(120deg, rgb(64, 18, 170),rgb(97, 29, 160));
+    width: 100%;
+    height: 100vh;
+    position:absolute;
+}
+.toDO-app{
+    width: 700px;
+    height: auto;
+    text-align: center;
+    margin-top:80px;
+    background: rgb(187, 186, 186);
+    margin: 100px auto;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgb(8, 8, 8);
+}
+.toDO-app h2{
+    font-size: 25px;
+    color: rgb(32, 32, 180);
+}
+.toDO-app img{
+    width: 50px;
+    margin-left: 10px;
+}
+.inputSection{
+    border-radius: 10px;
+    width: 100%;
+    height: 80px;
+    padding: 20px;
+    display: flex;
+}
+input{
+    flex: 1;
+    outline: none;
+    border: none;
+    background: transparent;
+    background: rgb(255, 255, 255);
+    border-radius: 20px;
+    padding: 10px;
+}
+button{
+    outline: none;
+    border: none;
+    background: transparent;
+    background: rgb(255, 255, 255);
+    border-radius:20px;
+    margin-left: -50px;
+    background: rgb(96, 14, 173);
+    width: 90px;
+    font-size: 16px;
+    color: rgb(252, 248, 248);
+}
+button:hover{
+    background: rgb(226, 10, 10);
+}
+.listHolder{
+    background: rgb(255, 255, 255);
+    height:auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgb(75, 74, 74);
+    margin-top: 20px;
+    position:relative;
+}
+ul li{
+    position: relative;
+    list-style:disc;
+    line-height: 25px;
+    color: rgb(0, 0, 0);
+    font-size: 17px;
+    padding-bottom:15px;
+    padding-top: 15px;
+    border-bottom: 1px dotted black;
+    margin-left: 10 px;
+}
+span{
+    padding-left: 30%;
+}
+span img{
+    height: 45px;
+    width: 5px;
+    margin-bottom: -12px;
+}
+.checked{
+    text-decoration:line-through;
+    color: rgb(255, 8, 0);
+    cursor: pointer;
+}
+.counter{
+    font-size: 17px;
+    font-style: italic;
+    padding: 10px;
+}
+.counter strong{
+    color: rgb(235, 16, 16);
+}
+/* the media queries section */
+@media(max-width:600px){
+    .toDO-app{
+        width: 340px;
+        padding:8px;
+    }
+    .toDO-app h2{
+        padding-top: 20px;
+        background: rgb(76, 75, 75);
+        border-radius: 50px;
+        padding-bottom: 20px;
+        border:2px solid rgb(10, 10, 10);
+        color: white;
+    }
+}

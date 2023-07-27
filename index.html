@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>To-Do List</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <main>
+            <div class="container">
+                <div class="toDO-app">
+                    <h2>To Do List <img src="images/Screenshot_2023-07-27_224750-removebg-preview.png"></h2>
+                    <div class="counter">
+                        <p>You have <strong>0</strong> new tasks to do Today!</p>
+                        </div>
+                    <div class="inputSection">
+                        <input type="text" placeholder="Enter text..." class="inputText">
+                        <button id="button" onclick="addList()">Submit</button>
+                    </div>
+                    <div  class="listHolder">
+                        <ul class="listItems">
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <script src="index.js"></script>
+    </body>
+</html>
